@@ -11,7 +11,8 @@ jobs:
           java-version: "12.x"
       - uses: subosito/flutter-action@v1
         with:
-          flutter-version: "1.15.22"
+          flutter-version: "1.15.x"
+          channel: "dev"
       - run: flutter pub get
       - run: flutter test
       - run: flutter build apk
